@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+<body>
+<script src="test.js"></script>
+<script>
+	window.onload = function myForm()
+	{	
+		var heading = document.createElement("h1");
+		heading.setAttribute("id","heading");
+		heading.textContent = "Registration Form Using JavaScript";
+		document.body.appendChild(heading);
+		var formElement = document.createElement("form");
+		formElement.setAttribute("id","myform");
+		document.body.appendChild(formElement);
+
+		var headingstyle = document.getElementById("heading");
+		headingstyle.style.textAlign = "center";
+
+		var newstyle = document.body;
+		newstyle.style.position = "relative";
+		newstyle.style.textAlign = "left";
+		newstyle.style.margin = "10px";
+		newstyle.style.padding = "5px";
+		newstyle.style.backgroundColor = "#87CEFA";
+
+		var formstyle = document.getElementById("myform");
+		formstyle.style.border = "1px solid black";
+		formstyle.style.borderRadius = "5px";
+		formstyle.style.padding = "25px";
+		formstyle.style.position = "relative";
+
+		var lblName = document.createElement("label");
+		lblName.textContent = "Name: ";
+		formElement.appendChild(lblName);
+		var fullName = document.createElement("input");
+		fullName.name = "fullName";
+		fullName.type = "text";
+		fullName.setAttribute("id","name");
+		formElement.appendChild(fullName);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblEmail = document.createElement("label");
+		lblEmail.textContent = "Email: ";
+		formElement.appendChild(lblEmail);
+		var email = document.createElement("input");
+		email.name = "email";
+		email.type = "text";
+		email.setAttribute("id","email");
+		formElement.appendChild(email);
+		formElement.appendChild(document.createElement("br")); 
+		formElement.appendChild(document.createElement("br"));   
+
+
+		var lblPhoneNumber = document.createElement("label");
+		lblPhoneNumber.textContent = "Phone Number: ";
+	    formElement.appendChild(lblPhoneNumber);
+	    var phoneNumber = document.createElement("input");
+	    phoneNumber.name = "phoneNumber";
+	    phoneNumber.type = "text";
+	    phoneNumber.setAttribute("id","phone");
+	    formElement.appendChild(phoneNumber);
+	    formElement.appendChild(document.createElement("br"));
+	    formElement.appendChild(document.createElement("br"));  
+
+
+	    var gender = document.createElement("label");
+	    gender.textContent = "Gender:";
+	    formElement.appendChild(gender);
+	    formElement.appendChild(document.createElement("br")); 
+	    
+	    var radioMale = document.createElement("input");
+		radioMale.setAttribute("type", "radio");
+		radioMale.setAttribute("id", "Male");
+        radioMale.setAttribute("name", "Gender");
+        radioMale.setAttribute("value", "Male");
+        var lblMale = document.createElement("label");
+        lblMale.innerHTML =  "Male";
+        formElement.appendChild(radioMale);
+        formElement.appendChild(lblMale);  
+        formElement.appendChild(document.createElement("br"));
+
+        var radioFemale = document.createElement("input");
+		radioFemale.setAttribute("type", "radio");
+		radioFemale.setAttribute("id", "Female");
+        radioFemale.setAttribute("name", "Gender");
+        radioFemale.setAttribute("value", "Female");
+        var lblFemale = document.createElement("label");
+        lblFemale.innerHTML =  "Female";
+        formElement.appendChild(radioFemale);
+		formElement.appendChild(lblFemale);  
+		formElement.appendChild(document.createElement("br"));
+
+        var radioOther = document.createElement("input");
+		radioOther.setAttribute("type", "radio");
+		radioOther.setAttribute("id", "Other");
+        radioOther.setAttribute("name", "Gender");
+        radioOther.setAttribute("value", "Other");
+        var lblOther = document.createElement("label");
+        lblOther.innerHTML =  "Other";
+        formElement.appendChild(radioOther);
+        formElement.appendChild(lblOther); 
+        formElement.appendChild(document.createElement("br"));
+        formElement.appendChild(document.createElement("br")); 
+
+
+        var lblAddress = document.createElement("label");
+		lblAddress.textContent = "Address: ";
+		formElement.appendChild(lblAddress);
+		var address = document.createElement("textarea");
+		address.name = "Address";
+		address.type = "text";
+		address.setAttribute("id","address");
+		formElement.appendChild(address);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblCountry = document.createElement("label");
+		lblCountry.textContent = "Choose your country: ";
+		formElement.appendChild(lblCountry);
+		var country = document.createElement("select");
+		country.setAttribute("id","country");
+		formElement.appendChild(country);
+
+		var opt0 = document.createElement("option");
+		var opt1 = document.createElement("option");
+		var opt2 = document.createElement("option");
+		var opt3 = document.createElement("option");
+		var opt4 = document.createElement("option");
+		opt0.value = "0";
+		opt0.text = "Please choose from below";
+		//opt0.setAttribute("disabled","disabled");
+		opt1.value = "1";
+		opt1.text = "India";
+		opt2.value = "2";
+		opt2.text = "US";
+		opt3.value = "3";
+		opt3.text = "Chile";
+		opt4.value = "4";
+		opt4.text = "Pakistan";
+		country.add(opt0);
+		country.add(opt1);
+		country.add(opt2);
+		country.add(opt3);
+		country.add(opt4);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblUsername = document.createElement("label");
+		lblUsername.textContent = "Username: ";
+		formElement.appendChild(lblUsername);
+		var username = document.createElement("input");
+		username.name = "fullName";
+		username.type = "text";
+		username.setAttribute("id","username");
+		formElement.appendChild(username);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblPassword = document.createElement("label");
+		lblPassword.textContent = "password: ";
+		formElement.appendChild(lblPassword);
+		var password = document.createElement("input");
+		password.name = "password";
+		password.type = "password";
+		password.setAttribute("id","password");
+		formElement.appendChild(password);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var sampleImage = document.createElement("img");
+		sampleImage.setAttribute("id","formimage");
+		sampleImage.setAttribute("src","/Users/nisum/Desktop/html/formfilling.jpeg");
+		sampleImage.setAttribute("alt","formfillingImage");
+		formElement.appendChild(sampleImage);
+		var imagestyle = document.getElementById("formimage");
+		imagestyle.style.position = "absolute";
+		imagestyle.style.height = "390px";
+		imagestyle.style.width = "400px";
+		imagestyle.style.top = "5px";
+		imagestyle.style.right = "5px";
+		imagestyle.style.opacity = "0.8";
+
+
+		var submitForm = document.createElement("input");
+		submitForm.type = "button";
+		submitForm.id = "submitButton"
+        submitForm.value = "Submit Form";
+        submitForm.onclick = validateForm;
+	    formElement.appendChild(submitForm);
+	    function validateForm()
+	    {
+        	var cname = document.getElementById("name").value;
+    		var cemail = document.getElementById("email").value;
+    		var cmobile = document.getElementById("phone").value;
+    		var cusername = document.getElementById("username").value;
+    		var cpassword = document.getElementById("password").value;
+    		var ccountry = document.getElementById("country").value;
+    		var regname = /^[a-zA-Z]+$/;
+    		var mobileno = /^((\\+91-?)|0)?[0-9]{10}$/;
+    		var emailid = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+    		if(cname == "") {
+        		alert("Please enter your name");
+    		}
+    		else if(!cname.match(regname)) {
+    			alert("Please enter valid name");
+    		}
+    		else if(cemail == "") {
+    			alert("Please enter your email");
+    		}
+    		else if(emailid.test(cemail)==false) {
+    			alert("Please enter valid email");
+    		}
+    		else if(cmobile == "") {
+    			alert("Please enter your mobile number");
+    		}
+    		else if(!cmobile.match(mobileno)) {
+    			alert("Please enter valid 10 digit mobile number");
+    		}
+
+    		else if(ccountry == "0") {
+    			alert("Please choose your country");
+    		}
+    		else if(cusername == "") {
+        		alert("Please enter your username");
+    		}
+    		else if(cpassword == "") {
+        		alert("Please enter your password");
+    		}
+    		else if(cpassword.length<8) {
+    			alert("Please enter valid password");
+    		}
+    		else {
+    			alert("Submitted Successfully");
+    		}
+
+    	}
+	    var submitQuery1 = document.createElement("input");
+		submitQuery1.type = "button";
+		submitQuery1.id = "submitQuery1button"
+	    submitQuery1.value = "Click Me to Change background color";
+	    submitQuery1.onclick = changeBackgroundColor;
+	    formElement.appendChild(submitQuery1);
+	    function changeBackgroundColor() {
+	    	alert("background color will change");
+	    	document.body.style.backgroundColor = "#FFB6C1";
+	    }
+
+	}
+
+
+</script>
+</body>
+</html>

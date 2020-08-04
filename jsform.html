@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM CREATION USING JAVASCRIPT</title>
+</head>
+<body>
+	<h1>JAVASCRIPT FORM</h1>
+	<div id="queryBox">
+		<div id="queryForm">
+		</div>
+	</div>
+	<script> 
+		window.onload = function queryForm()
+		{
+		    var queryBox = document.getElementById("queryBox").style.display = "block";
+		    var queryForm = document.getElementById("queryForm");
+		    var linebreak = document.createElement("br");
+
+		    var lblName = document.createElement("label");
+		    lblName.textContent = "Name: ";
+		    queryForm.appendChild(lblName);
+
+		    var fullName = document.createElement("input");
+		    fullName.name = "fullName";
+		    fullName.type = "text";
+		    fullName.required = "required";
+		    queryForm.appendChild(fullName);
+		    queryForm.appendChild(linebreak);
+
+
+		    var lblEmail = document.createElement("label");
+		    lblEmail.textContent = "Email: ";
+		    queryForm.appendChild(linebreak);
+		    queryForm.appendChild(lblEmail);
+
+		    var email = document.createElement("input");
+		    email.name = "email";
+		    email.type = "text";
+		    email.required = "required";
+		    queryForm.appendChild(email);
+
+
+		    var lblPhoneNumber = document.createElement("label");
+		    lblPhoneNumber.textContent = "Phone Number: ";
+		    queryForm.appendChild(linebreak);
+		    queryForm.appendChild(lblPhoneNumber);
+
+		    var phoneNumber = document.createElement("input");
+		    phoneNumber.name = "phoneNumber";
+		    phoneNumber.type = "text";
+		    phoneNumber.required = "required";
+		    queryForm.appendChild(phoneNumber);
+
+
+
+/* var lblGender = document.createElement("label");
+	    lblGender.textContent = "Gender:";
+	    formElement.appendChild(document.createElement("br")); 
+	    
+	    var radioMale = document.createElement("input");
+		radioMale.setAttribute("type", "radio");
+		radioMale.setAttribute("id", "radioMale");
+        radioMale.setAttribute("name", "Male");
+        var lblMale = document.createElement("label");
+        lblMale.innerHTML =  "Male";
+        formElement.appendChild(radioMale);
+        formElement.appendChild(lblMale);  
+        formElement.appendChild(document.createElement("br"));
+
+        var radioFemale = document.createElement("input");
+		radioFemale.setAttribute("type", "radio");
+		radioFemale.setAttribute("id", "radioFemale");
+        radioFemale.setAttribute("name", "Female");
+        var lblFemale = document.createElement("label");
+        lblFemale.innerHTML =  "Female";
+        formElement.appendChild(radioFemale);
+		formElement.appendChild(lblFemale);  
+		formElement.appendChild(document.createElement("br"));
+
+        var radioOther = document.createElement("input");
+		radioOther.setAttribute("type", "radio");
+		radioOther.setAttribute("id", "radioOther");
+        radioOther.setAttribute("name", "Other");
+        var lblOther = document.createElement("label");
+        lblOther.innerHTML =  "Other";
+        formElement.appendChild(radioOther);
+        formElement.appendChild(lblOther); 
+        formElement.appendChild(document.createElement("br"));
+        formElement.appendChild(document.createElement("br")); */
+
+		    var submitQuery = document.createElement("input");
+		    submitQuery.type = "submit";
+		    submitQuery.value = "Submit Query";
+		    queryForm.appendChild(linebreak);
+		    queryForm.appendChild(submitQuery);
+	}
+	</script>
+		
+</body>
+</html>

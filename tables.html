@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<title>Table Example</title>
+	<style>
+		table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		}
+		th, td {
+		  padding: 15px;
+		  text-align: center;
+		}
+		table#t01 tr:nth-child(even) {
+		  background-color: #eee;
+		}
+		table#t01 tr:nth-child(odd) {
+		  background-color: #fff;
+		}
+		table#t01 th {
+		  color: white;
+		  background-color: brown;
+		}
+	</style>
+</head>
+<html>
+	<body>
+		<h2>Basic HTML Table</h2>
+		<table style="width:100%" id="t01">
+		<caption>Employee Details</caption>
+			<tr>
+				<th>S.No</th>
+				<th>Name</th>
+				<th>Emp.Id</th>
+				<th colspan="2">Phone</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Ramya</td>
+				<td>16555</td>
+				<td>9090909090</td>
+				<td>9191919191</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Saisri</td>
+				<td>16549</td>
+				<td>8181818181</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Priya</td>
+				<td>16649</td>
+				<td>-</td>
+				<td>8080808080</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Manvitha</td>
+				<td>40287</td>
+				<td>7070707070</td>
+				<td>7171717171</td>
+			</tr>
+		</table>
+	</body>
+</html>

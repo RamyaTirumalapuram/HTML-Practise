@@ -1,0 +1,46 @@
+<!--
+Question 4:
+var a = [1,2,3,4,5,6,1,2,3,4,5];
+var b = [1,2,3,4,5,1,2,3,4,5];
+Find middle element in an array of both the arrays?
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Middle element of an Array</title>
+</head>
+<body>
+	<h1>Finding middle element of an Array</h1>
+	<p>a = [1,2,3,4,5,6,1,2,3,4,5];</p>
+	<p>b = [1,2,3,4,5,1,2,3,4,5];</p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+<script>
+var a = [1,2,3,4,5,6,1,2,3,4,5];
+var b = [1,2,3,4,5,1,2,3,4,5];	
+//a.sort(function(x, y) {return x-y;});
+document.getElementById("demo1").innerHTML = ("Array a when sorted is: "+a.sort(function(x, y) {return x-y;}));
+//console.log(a);
+//b.sort(function(x, y) {return x-y;});
+//console.log(b);
+document.getElementById("demo2").innerHTML = ("Array b when sorted is: "+b.sort(function(x, y) {return x-y;}));
+
+function middle(array) {
+	var middle = Math.floor(array.length / 2);
+    if(array.length % 2 === 0) {
+    //console.log("middle nums when array length is even: " + array[middle - 1]  + " " + array[middle]);
+    document.getElementById("demo3").innerHTML = ("middle nums when array length is even: " + array[middle - 1]  + " " + array[middle]);
+    } else {
+    //console.log("middle num when array length is odd: " + array[middle]);
+    document.getElementById("demo4").innerHTML = ("middle num when array length is odd: " + array[middle]);
+    }
+}
+
+console.log(middle(a));
+console.log(middle(b));
+
+</script>
+</body>
+</html>

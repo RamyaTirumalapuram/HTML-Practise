@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Do you like to have Coffee?</title>
+	<meta name="viewport" content="width=device-width,initial-scale='1">
+	<link rel="stylesheet" href="style1.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4.7.0/icons/">
+</head>
+<body>
+    <div class="coffee">
+    	<div class="nav-bar">
+    		<div class="nav-logo">
+    			<img src="/Users/nisum/Desktop/mylogo.jpeg" alt="logo">
+    		</div>
+            <div class="nav-links" id="nav-links">
+    			<i class="fa fa-window-close" onclick="closeMenu()"></i>
+    			<ul>
+    				<a href="#"><li>HOME</li></a>
+    				<a href="#"><li>ABOUT</li></a>
+    				<a href="#"><li>STORES</li></a>
+    		    </ul>
+    		    <button type="button" class="btn">SIGN UP</button>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+    		</div>
+    		<i class="fa fa-bars" onclick="showMenu()"></i>
+    	</div>
+
+    	<div class="banner-title">
+    		<h1>Coffee and Friends <br>are the Perfect Blend</h1>
+    		<button type="button" class="btn">EXPLORE</button>
+    	</div>
+
+    	<div class="vertical-bar">
+    		<div class="search-icon">
+    			<i class="fa fa-th-list"></i>
+    			<i class="fa fa-search"></i>
+    		</div>
+
+    		<div class="social-icons">
+    			<i class="fa fa-facebook"></i>
+    			<i class="fa fa-instagram"></i>
+    			<i class="fa fa-twitter"></i>
+    			<i class="fa fa-pinterest"></i>
+    		</div>
+        </div>
+    		<div class="notifications">
+    			<div class="contents">
+    				<small>Please Visit our Coffee Shop</small>
+    				<p><a href="">PREV</a><a href="">NEXT</a></p>
+    			</div>
+    			<div class="notification-img">
+    				<img src="/Users/nisum/Desktop/coffee2.jpeg">
+    			</div>
+    		</div>
+
+    </div>
+    <script>
+    	var show = document.getElementById("nav-links");
+    	function showMenu(){
+    		show.style.right = "0";
+
+    	}
+    	function closeMenu(){
+    		show.style.right = "-200px";
+    	}
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!--Question 1:
+var in1 = [1,2,3,4,5,6,1,2,3,4,5],
+in2 = [1,2,3,4,2,3,4,7,6,7,8,9]
+out = [1,2,3,4,5,6,7,8,9];
+-->
+
+<!DOCTYPE html>
+<html>
+<title>Union of Arrays</title>
+<body>
+<h2>JavaScript Array Union</h2>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo"></p>
+
+
+<script>
+var array1 = [1,2,3,4,5,6,1,2,3,4,5];
+document.getElementById("demo1").innerHTML = "array1 = " + array1;
+var array2 = [1,2,3,4,2,3,4,7,6,7,8,9];
+document.getElementById("demo2").innerHTML = "array2 = " + array2;
+
+function union(arra1, arra2) {
+  
+  if ((arra1 == null) || (arra2==null)) 
+    return void 0;
+  
+  var obj = {};
+ 
+  for (var i = arra1.length-1; i >= 0; -- i)
+     obj[arra1[i]] = arra1[i];
+ 
+  for (var i = arra2.length-1; i >= 0; -- i)
+     obj[arra2[i]] = arra2[i];
+ 
+  var res = [];
+ 
+  for (var n in obj)
+  {
+  
+    if (obj.hasOwnProperty(n)) 
+      res.push(obj[n]);
+  }
+ 
+  return res;
+}
+document.getElementById("demo").innerHTML = "The resulted array is: "+union([1,2,3,4,5,6,1,2,3,4,5],[1,2,3,4,2,3,4,7,6,7,8,9]);
+
+</script>
+
+</body>
+</html>

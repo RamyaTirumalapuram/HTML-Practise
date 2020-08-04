@@ -1,0 +1,345 @@
+.box1 {
+    position: relative;
+    border-bottom: 1px solid black;
+    padding:5px;
+    height:50px;
+    margin: 3px;
+}
+.topright {
+    position: absolute;
+    right: 50px;
+    font-size: 16px;
+}
+.topright ul {
+	float: left;
+}
+.topright ul li {
+	margin: 1px;
+	float: left;
+	position: relative;
+	/*left: 100%;*/
+	width: 100px;
+	font-size: 14px;
+	font-family: Verdana;
+	list-style-type: none;
+	border-right: 1px solid black;
+	text-align: center;
+}
+.topright ul li:last-child {
+	border-right: none;
+}
+.topright ul li a{
+	color:black;
+	text-decoration: none;
+}
+.topleft {
+	margin: 1px;
+	position: absolute;
+    top:10px;
+    bottom:20px;
+    left: 20px;
+    font-size: 14px;
+}
+span {
+	color:red;
+	font-weight: bold;
+}
+.box2 {
+	position: relative;
+	margin: 10px 0px 5px 10px;
+	padding: 10px;
+	border: hidden;
+	text-align: center;
+}
+.box2 h1 {
+	float:left;
+	letter-spacing: 3px;
+	font-weight: Serif;
+}
+.box2 h1::first-letter {
+	font-size: xx-large;
+	color: white;
+	border: 1px hidden #c81a00;
+	padding: 2px;
+	background-color: #c81a00;
+}
+.box2 p {
+	float:right;
+	padding-top: 10px;
+	width:50%;
+	text-align: right;
+	
+}
+.nav-bar ul {
+    list-style-type: none;
+    margin: 20px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+}
+.nav-bar li {
+    float: left;
+    border-right: 1px solid #1a1a00;
+}
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-bar li a:hover:not(.active) {
+    background-color: #111;
+}
+.active {
+    background-color: #c81a00;
+}
+.nav-bar .search-container {
+    position: absolute;
+    right:10px;
+    background-image: url('/Users/nisum/Desktop/searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+}
+.nav-bar input[type=text] {
+    padding: 6px;
+    margin-top: 9px;
+    font-size: 17px;
+    border: none;
+}
+.nav-bar .search-container button {
+    /*float: right;*/
+    left:50px;
+    display: block;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+.nav-bar .search-container button:hover {
+    background: #ccc;
+}
+* {
+  	box-sizing: border-box;
+}
+.container {
+	float: left;
+	margin: 20px 30px;
+}
+.side {
+	width: : 34%;
+	border: 1px solid gray;
+	margin: 5px;
+	height: 400px;
+}
+.middle {
+	width: 76% ;
+	border: 1px solid gray;
+	margin: 5px;
+	padding: 20px;
+	height: 400px;
+	position: relative;
+}
+.row:after {
+  	content: "";
+  	display: table;
+	clear: both;
+}
+.container.side ul {
+    list-style-type: none;
+    margin: 3px;
+    padding: 0;
+    /*width: 200px;*/
+    background-color: #fff;
+    float: left;
+    border: 1px solid #555;
+}
+#categories {
+	color: white;
+	background-color: #c81a00;
+	/*padding: 5px;*/
+}
+.container.side li a {
+    display: block;
+    color: #000;
+    padding: 4px 16px;
+    text-decoration: none;
+}
+
+.container.side li {
+    text-align: left;
+    border-bottom: 1px solid #555;
+    padding: 2px;
+}
+
+/*.container.side li:last-child {
+    border-bottom: none;
+}*/
+
+.container.side li a.active {
+    background-color: #c81a00;
+    color: white;
+}
+.container.side li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.container.middle img {
+	position: absolute;
+	background: cover;
+	height: 200px;
+	width: 400px;
+	right:10px;
+	top: 40px;
+	bottom: 40px;
+}
+.clearance {
+	color: #c81a00;
+	font-family: arial;
+	font-size: 30px;
+	font-style: bold
+}
+.sale {
+	color: #c81a00;
+	font-family: arial;
+	font-size: 100px;
+	font-weight: bold;
+}
+.discount {
+	color: #787473;
+	font-family: arial;
+	font-size: 25px;
+}
+.text {
+	color: #232323;
+	font-family: verdana;
+	font-size: 18px;
+}
+#ShopNow {
+	background-color: #c81a00;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+.textbox {
+	position: relative;
+	border: 1px solid gray;
+	margin: 15px;
+	padding: 8px;
+	width: 100%;
+	overflow: auto;
+}
+.textbox ul {
+	margin-bottom: 10px;
+	padding: 5px;
+}
+.textbox li {
+	list-style-type: none;
+	display: inline-block;
+
+}
+.textbox li a {
+	text-decoration: none;
+	color: blue;
+}
+.new {
+	float: left;
+	font-weight: bold;
+	font-family: verdana;
+}
+.all {
+	float: right;
+}
+.box {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    height: 300px;
+    border: 1px solid gray;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.box p {
+	font-size: 15px;
+
+}
+.box img {
+	/*position: absolute;
+	/*background: cover;
+	height: 100%;
+	width: 100%;*/
+	/*left: 20px;
+	right:10px;
+	top: 40px;
+	bottom: 40px;
+	overflow: auto;*/
+	max-width: 200%;
+    max-height: 200%;
+    display: inline-block;
+}
+.box a:link, a:visited {
+  background-color: #c81a00;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.box a:hover, a:active {
+  background-color: red;
+}
+.box-new {
+    float: left;
+    position: relative;
+    display: inline-block;
+    width: 25%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid gray;
+}
+.box-new ul {
+	list-style-type: none;
+	margin: 1px;
+	font-family: Verdana;
+	font-size: 15px;
+	position: absolute;
+	left: 2px;
+}
+.box-new p {
+	font-size: 16px;
+	color: #000;
+	border-bottom: 1px solid gray;
+}
+.box-new li a{
+	color: #336699;
+	text-decoration: none;
+}
+.box-new .social-icons .fa {
+	cursor: pointer;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #c81a00;
+}
+.footer {
+	margin-top:2%;
+  	margin-bottom: 25px;
+  	border-top:1px solid grey;
+  	text-align:center;
+}
+.footer span {
+	color: #c81a00;
+}

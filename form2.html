@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+</head>
+<body>
+<script>
+	window.onload = function myForm()
+	{
+		//var lbreak = document.createElement("br");  formElement.appendChild(document.createElement("br"));
+		var heading = document.createElement("h1");
+		heading.textContent = "JavaScript Form";
+		document.body.appendChild(heading);
+		var formElement = document.createElement("div");
+		formElement.setAttribute("id","myform");
+		document.body.appendChild(formElement);
+
+
+		var lblName = document.createElement("label");
+		lblName.textContent = "Name: ";
+		formElement.appendChild(lblName);
+		var fullName = document.createElement("input");
+		fullName.name = "fullName";
+		fullName.type = "text";
+		fullName.required = "required";
+		formElement.appendChild(fullName);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblEmail = document.createElement("label");
+		lblEmail.textContent = "Email: ";
+		formElement.appendChild(lblEmail);
+		var email = document.createElement("input");
+		email.name = "email";
+		email.type = "text";
+		email.required = "required";
+		formElement.appendChild(email);
+		formElement.appendChild(document.createElement("br")); 
+		formElement.appendChild(document.createElement("br"));   
+
+
+		var lblPhoneNumber = document.createElement("label");
+		lblPhoneNumber.textContent = "Phone Number: ";
+	    formElement.appendChild(lblPhoneNumber);
+	    var phoneNumber = document.createElement("input");
+	    phoneNumber.name = "phoneNumber";
+	    phoneNumber.type = "text";
+	    phoneNumber.required = "required";
+	    formElement.appendChild(phoneNumber);
+	    formElement.appendChild(document.createElement("br"));
+	    formElement.appendChild(document.createElement("br"));  
+
+
+        var lblAddress = document.createElement("label");
+		lblAddress.textContent = "Address: ";
+		formElement.appendChild(lblAddress);
+		var address = document.createElement("textarea");
+		address.name = "Address";
+		address.type = "text";
+		address.required = "required";
+		formElement.appendChild(address);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblUsername = document.createElement("label");
+		lblUsername.textContent = "Username: ";
+		formElement.appendChild(lblUsername);
+		var username = document.createElement("input");
+		username.name = "fullName";
+		username.type = "text";
+		username.required = "required";
+		formElement.appendChild(username);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+		var lblPassword = document.createElement("label");
+		lblPassword.textContent = "password: ";
+		formElement.appendChild(lblPassword);
+		var password = document.createElement("input");
+		password.name = "password";
+		password.type = "password";
+		password.required = "required";
+		formElement.appendChild(password);
+		formElement.appendChild(document.createElement("br"));
+		formElement.appendChild(document.createElement("br"));
+
+
+
+
+		var submitForm = document.createElement("input");
+		submitForm.type = "submit";
+		submitForm.value = "Submit Form";
+	    formElement.appendChild(submitForm);
+
+	}
+</script>
+</body>
+</html>

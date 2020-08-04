@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<html>
+		<body>
+
+			<h1>My First JavaScript</h1>
+
+			<p>JavaScript can change the content of an HTML element:</p>
+
+			<button type="button" onclick="myFunction()">Click Me!</button>
+
+			<p id="demo">This is a demonstration.</p>
+
+			<script>
+				function myFunction() { 
+				  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+				}
+			</script>
+
+
+			<h1>My First JavaScript Demo</h1>
+
+			<p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+			<script>
+				function myFunction1() {
+				  document.getElementById("demo1").style.fontSize = "25px"; 
+				  document.getElementById("demo1").style.color = "red";
+				  document.getElementById("demo1").style.backgroundColor = "yellow";        
+				}
+			</script>
+
+			<button type="button" onclick="myFunction1()">Now Click Me!</button>
+
+		</body>
+	</html>
